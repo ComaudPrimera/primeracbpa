@@ -34,9 +34,11 @@
                             <div class="col text-center">
                                 <h1 class="text-uppercase fw-bold">No hay imágenes disponibles</h1>
                                 <p class="my-3">Agregue imágenes a la base de datos.
+                                    <!--
                                     {% if user.is_authenticated %}
                                     <a target="_blank" href="{% url 'admin:webpage_galeria_changelist' %}">Acceso</a>
                                     {% endif %}
+                                    -->
                                 </p>
                             </div>
                         </div>
@@ -101,11 +103,15 @@
                 <div class="card">
                     <img class="rounded img-fluid card-img-top w-100 d-block fit-cover" style="height: 200px;"
                         src="{% static 'img/default-user.png' %}" />
+                        
                     <div class="card-body p-4">
                         <h4 class="card-title text-center">Agregar especialidad</h4>
+                        <!--
                         <a class="card-text text-center" target="_blank"
                             href="{% url 'admin:webpage_galeria_changelist' %}">Acceso</a>
+                        -->
                     </div>
+                        
                 </div>
                 {% endif %}
             </div>
@@ -154,6 +160,7 @@
                         src="{% static 'img/default-user.png' %}" alt="No hay imágenes" /></a>
             </div>
             {% endif %}
+            <!--
             {% if user.is_authenticated %}
             <div class="col item">
                 <a class="card-text text-center" target="_blank" href="{% url 'admin:webpage_galeria_changelist' %}">
@@ -163,6 +170,7 @@
                 </a>
             </div>
             {% endif %}
+            -->
         </div>
     </div>
 </section>
